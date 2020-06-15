@@ -85,7 +85,7 @@
     // Add action buttons to payload
     NSArray<NSString *> *actionTitles = [self getActionTitlesFromPayload:payload];
 
-    [self presentDialogWithTitle:payload.title withMessage:payload.body withActions:actionTitles cancelTitle:@"Close" withActionCompletion:^(int tappedActionIndex) {
+    [self presentDialogWithTitle:payload.title withMessage:payload.body withActions:actionTitles cancelTitle:NSLocalizedString(@"Close", @"Close button") withActionCompletion:^(int tappedActionIndex) {
         OSNotificationActionType actionType = OSNotificationActionTypeOpened;
         
         NSDictionary *finalDict = messageDict;

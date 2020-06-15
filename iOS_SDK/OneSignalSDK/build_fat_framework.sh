@@ -9,8 +9,8 @@ BUILD_SCHEME="OneSignalFramework"
 BUILD_PROJECT="OneSignal.xcodeproj"
 
 # NOTE: Once Apple drops support for Xcode 10, we can edit this to use same xcodebuild version for all three build commands
-XCODEBUILD_OLDEST_SUPPORTED=/Applications/Xcode10.1.app/Contents/Developer/usr/bin/xcodebuild
-XCODEBUILD_11_0=/Applications/Xcode11.0.app/Contents/Developer/usr/bin/xcodebuild
+XCODEBUILD_OLDEST_SUPPORTED=/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
+XCODEBUILD_11_0=/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
 
 # For backwards compatible bitcode we need to build iphonesimulator + iphoneos with 3 versions behind the latest.
 #       However variant=Mac Catalyst needs to be be Xcode 11.0
